@@ -1,13 +1,13 @@
 baseURL: https://leekleak.github.io/
 languageCode: en-us
-title: tintotint's site
+title: leekleak's site
 theme: PaperMod
 metaDataFormat: "yaml"
 
 caches:
   images:
     dir: :cacheDir/images
-    
+
 params:
   ShowRssButtonInSectionTermList: true
   mainSections:
