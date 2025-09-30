@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Photography on tintotint&#39;s site</title>
+    <link>http://localhost:1313/photography/</link>
+    <description>Recent content in Photography on tintotint&#39;s site</description>
+    <generator>Hugo -- 0.150.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Sep 2025 22:43:38 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/photography/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mexico</title>
+      <link>http://localhost:1313/photography/mexico/</link>
+      <pubDate>Tue, 30 Sep 2025 22:43:38 +0200</pubDate>
+      <guid>http://localhost:1313/photography/mexico/</guid>
+      <description>Pictures taken during a trip to Mexico</description>
+    </item>
+    <item>
+      <title>Morroco</title>
+      <link>http://localhost:1313/photography/morroco/</link>
+      <pubDate>Mon, 29 Sep 2025 20:53:22 +0200</pubDate>
+      <guid>http://localhost:1313/photography/morroco/</guid>
+      <description>Pictures taken during a trip to Morroco</description>
+    </item>
+  </channel>
+</rss>

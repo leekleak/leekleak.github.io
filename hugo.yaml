@@ -1,0 +1,56 @@
+baseURL: https://leekleak.github.io/
+languageCode: en-us
+title: tintotint's site
+theme: PaperMod
+metaDataFormat: "yaml"
+
+caches:
+  images:
+    dir: :cacheDir/images
+    
+params:
+  ShowRssButtonInSectionTermList: true
+  mainSections:
+    - games
+    - programming
+    - photography
+    - whacky-corner
+    
+  defaultTheme: auto
+  homeInfoParams:
+    Title: Hello!
+    Content: All the cool kids got personal pages, so I should have one too.
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/leekleak"
+    - name: "itchio"
+      url: "https://tintotint.itch.io/"
+    - name: "bluesky"
+      url: "https://bsky.app/profile/tintotint.bsky.social"
+    - name: "rss"
+      url: /feed/
+      
+menu:
+  main:
+    - identifier: games
+      name: games
+      url: /games/
+      weight: 10
+    - identifier: programming
+      name: programming
+      url: /programming/
+      weight: 20
+    - identifier: photography
+      name: photography
+      url: /photography/
+      weight: 30
+    - identifier: whacky-corner
+      name: whacky-corner
+      url: /whacky-corner/
+      weight: 40
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  

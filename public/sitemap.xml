@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/photography/mexico/</loc>
+    <lastmod>2025-09-30T22:43:38+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/photography/</loc>
+    <lastmod>2025-09-30T22:43:38+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-30T22:43:38+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/photography/morroco/</loc>
+    <lastmod>2025-09-29T20:53:22+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/games/</loc>
+    <lastmod>2025-09-29T11:24:22+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/games/melomys/melomys/</loc>
+    <lastmod>2025-09-29T11:24:22+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/feed/</loc>
+  </url><url>
+    <loc>http://localhost:1313/programming/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/whacky-corner/</loc>
+  </url>
+</urlset>
