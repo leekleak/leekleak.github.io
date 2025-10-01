@@ -1,7 +1,7 @@
 ---
 title: 'Melomys'
 summary: A game jam post-mortem
-date: 2025-09-29T11:24:22+02:00
+date: 2025-05-11
 draft: false
 cover:
   image: "/games/melomys/cover.png"

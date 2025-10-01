@@ -1,7 +1,7 @@
 ---
 title: 'Mexico'
-summary: 'Pictures taken during a trip to Mexico'
-date: 2025-09-30T22:43:38+02:00
+summary: 'Album of images from Mexico'
+date: 2025-07-15
 draft: false
 cover:
   image: "/photography/mexico/ResizedImage_2025-09-29_20-04-38_160-caesium.jpg"

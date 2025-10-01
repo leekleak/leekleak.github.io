@@ -1,7 +1,7 @@
 ---
 title: 'Morroco'
-summary: 'Pictures taken during a trip to Morroco'
-date: 2025-09-29T20:53:22+02:00
+summary: 'Album of images from Morroco'
+date: 2025-01-08
 draft: false
 cover:
   image: "/photography/morroco/ResizedImage_2025-09-29_19-47-25_23-caesium.jpg"

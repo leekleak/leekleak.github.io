@@ -1,6 +1,6 @@
-baseURL: https://leekleak.github.io/
+baseURL: https://tintotint.eu/
 languageCode: en-us
-title: leekleak's site
+title: tintotint's site
 theme: PaperMod
 metaDataFormat: "yaml"
 
@@ -9,6 +9,8 @@ caches:
     dir: :cacheDir/images
 
 params:
+  assets:
+    favicon: "/favicon.ico"
   ShowRssButtonInSectionTermList: true
   mainSections:
     - games
@@ -29,7 +31,7 @@ params:
       url: "https://bsky.app/profile/tintotint.bsky.social"
     - name: "rss"
       url: /feed/
-      
+
 menu:
   main:
     - identifier: games
