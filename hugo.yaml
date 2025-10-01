@@ -40,8 +40,6 @@ params:
       url: "https://bsky.app/profile/tintotint.bsky.social"
     - name: "rss"
       url: /feed/
-    - name: "whatever"
-      url: /feed/
   mainSections:
     - games
     - programming
