@@ -12,12 +12,7 @@ params:
   assets:
     favicon: "/favicon.ico"
   ShowRssButtonInSectionTermList: true
-  mainSections:
-    - games
-    - programming
-    - photography
-    - whacky-corner
-    
+  env: production
   defaultTheme: auto
   homeInfoParams:
     Title: Hello!
@@ -31,6 +26,11 @@ params:
       url: "https://bsky.app/profile/tintotint.bsky.social"
     - name: "rss"
       url: /feed/
+  mainSections:
+    - games
+    - programming
+    - photography
+    - whacky-corner
 
 menu:
   main:
