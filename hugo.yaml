@@ -18,8 +18,19 @@ params:
   env: production
   defaultTheme: auto
   homeInfoParams:
-    Title: Hello!
-    Content: All the cool kids got personal pages, so I should have one too.
+    Title: hello, i'm tintotint
+    Content: >
+      <div> 
+        <p style="float: left; padding-right: 10px;">
+          <img alt="emoji avatar of me" src="/apple-touch-icon.png" height="100px" width="100px">
+        </p>
+        <div style="padding-right: 10px">
+          <p>Sometimes I make <b><a href="/games/">games</a></b> for game jams,</p>
+          <p>Sometimes I <b><a href="/programming/">program</a></b> cool little projects</p>
+          <p>Sometimes I take some <b><a href="/photography/">photos</a></b>,</p>
+          <p>And sometimes I do some things that are utterly <b><a href="/whacky-corner/">insane</a></b></p>
+        </div>
+      </div>
   socialIcons:
     - name: "github"
       url: "https://github.com/leekleak"
@@ -29,30 +40,13 @@ params:
       url: "https://bsky.app/profile/tintotint.bsky.social"
     - name: "rss"
       url: /feed/
+    - name: "whatever"
+      url: /feed/
   mainSections:
     - games
     - programming
     - photography
     - whacky-corner
-
-menu:
-  main:
-    - identifier: games
-      name: games
-      url: /games/
-      weight: 10
-    - identifier: programming
-      name: programming
-      url: /programming/
-      weight: 20
-    - identifier: photography
-      name: photography
-      url: /photography/
-      weight: 30
-    - identifier: whacky-corner
-      name: whacky-corner
-      url: /whacky-corner/
-      weight: 40
 
 markup:
   goldmark:
