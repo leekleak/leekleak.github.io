@@ -221,6 +221,8 @@ Judging by **MangaDex** chapter release it took me about two months to scanlate 
 
 This was the final manga I scanlated before *abandoning* the project. It was also an escalation in scope as it was a (staggering) **3** volumes in length. And again, I'm **really** happy with it.
 
+This was also the first and only manga I created a [trailer](https://youtube.com/shorts/NpqvXjkwob8) for, so that's pretty cool. 
+
 ## The process
 
 It was my first time translating not a manga, but a manhwa. Normally that would imply an entirely different format, as most manhwa are **vertical** instead of **horizontal** and, instead of containing pages, manhwa chapters are pretty much just a very long image that you scroll through. It's like if manga was **tiktok-ified**.
