@@ -5,7 +5,7 @@ date: 2025-10-03
 draft: false
 ShowToc: true
 cover:
-  image: "/whacky-corner/scanlator/images/cover.png"
+  image: "/whacky-corner/scanlator/images/cover.jpg"
   alt: "Logo of my scanlation 'group'"
   relative: false
 ---
@@ -104,7 +104,7 @@ I guess I should start with the very *first* manga I scanlated.
 
 # Among Us
 
-![](/whacky-corner/scanlator/images/amongus_cover.png "Smetona's Comics presents: Among Us")
+![](/whacky-corner/scanlator/images/amongus_cover.jpg "Smetona's Comics presents: Among Us")
 
 Yeah, there's an **Among Us** manga. Go read it in [**Lithuanian**](https://mangadex.org/title/5df4760c-1400-416d-8b4c-0a6718347c1c/among-us).
 
@@ -113,7 +113,7 @@ And so I did!
 
 You don't have to read it very closely to notice that the translation is *quite*... liberal in its interpretation of the original story. That's not to say it's *worse* -- it's actually the **opposite**. I'd hate to spoil any of the gags, but in my opinion it's very funny even now and a *remarkable* upgrade over the original.
 
-![](/whacky-corner/scanlator/images/amogus_1.png "The game of lies is about to begin. / The most serious players have gathered inside the spaceship. / These slaves of capitalism were ready to give their lives for a promise of dopamine.")
+![](/whacky-corner/scanlator/images/amogus_1.jpg "The game of lies is about to begin. / The most serious players have gathered inside the spaceship. / These slaves of capitalism were ready to give their lives for a promise of dopamine.")
 
 In retrospect, I think the quality of the scanlation itself is fantastic, *especially* considering that it was my first ever attempt. I was pleasantly surprised to see that the translation itself is incredibly **entertaining** and the typesetting is probably better than any of the remaining 25 chapters translated not by me. Maybe the only gripe could be my mediocre cleaning, but that's about it.
 
@@ -121,7 +121,7 @@ Now I'm kinda sad not all of my translations were as **humorous** as this, as it
 
 # Smetonos komiksai
 
-![](/whacky-corner/scanlator/images/cover.png "The logo of Smetona's Comics")
+![](/whacky-corner/scanlator/images/cover.jpg "The logo of Smetona's Comics")
 
 Before we continue, you may have noticed an awfully pale **mustachioed** fella making a cameo on both the cover of this post and on the cover for the **Among Us** scanlation.
 
@@ -145,7 +145,7 @@ I was beginning to scanlate my *second* manga and...
 
 # The Music of Marie
 
-![](/whacky-corner/scanlator/images/marijos_cover.png "Smetona's Comics presents: The Music of Marie")
+![](/whacky-corner/scanlator/images/marijos_cover.jpg "Smetona's Comics presents: The Music of Marie")
 
 And it didn't go *too* well.
 
@@ -173,7 +173,7 @@ But **honestly**?
 
 I don't think that that was that bad of an idea. Knowing your limits is a good thing and that may be part of the reason I didn't quit after doing only a couple of chapters. Afterall it's much easier to give up when you don't see the light at the end of the proverbial **tunnel**.
 
-![](/whacky-corner/scanlator/images/marie_1.png "Snow...")
+![](/whacky-corner/scanlator/images/marie_1.jpg "Snow...")
 
 ## The scanlation process
 
@@ -185,7 +185,7 @@ Surprisingly, **no**!
 
 Having read it, I actually *quite* like it! It's nothing groundbreaking, but it has nice art and good atmosphere, which by itself is most of the reason one would read one manga over another (sorry weebs, manga ain't exactly known for its tear-wrenching writing).
 
-![](/whacky-corner/scanlator/images/marie_2.png "I see Marie.")
+![](/whacky-corner/scanlator/images/marie_2.jpg "I see Marie.")
 
 The problem is that it was just kinda **hard** to scanlate. Whereas with other manga sometimes I could scanlate a chapter a day, I think **The Music of Marie's** chapter took almost a week. It was just tricky in every way.
 
@@ -201,7 +201,7 @@ If you want, you can read the first chapter [**here**](https://mangadex.org/titl
 
 # Bibliomania
 
-![](/whacky-corner/scanlator/images/bibliomania_cover.png "Smetona's Comics presents: Bibliomania")
+![](/whacky-corner/scanlator/images/bibliomania_cover.jpg "Smetona's Comics presents: Bibliomania")
 
 And we're so so **back!!!** It's **amazing**. Read it [**here**](https://mangadex.org/title/d22ae7a1-cfae-475a-a8fc-589ef85eece4/bibliomania).
 
@@ -229,7 +229,7 @@ It was my first time translating not a manga, but a manhwa. Normally that would 
 
 While such a format is generally much nicer to read on phones, it's also *annoying* to edit. As having a **720 by 55420** pixel image is generally considered suboptimal, manhwa is split into **parts** to be lazily loaded by the user, which means that as a scanlator I have to *rejoin* them, which does force my editor to cope with such **insane** resolutions.
 
-![](/whacky-corner/scanlator/images/horizon_1.png "How low has this world fallen...")
+![](/whacky-corner/scanlator/images/horizon_1.jpg "How low has this world fallen...")
 
 Good news is: **none** of this mattered to me!
 
@@ -241,7 +241,7 @@ This was also the time I was forced to begin thinking of how to **optimise** the
 
 The **first** problem was a lack of a very simple feature -- **generative fill**. As far as I know, GIMP still doesn't have this even now, so I had to look for plugins to fill in the gap. This feature is incredibly useful when the text is placed against a simple background that is not exactly plain and **The Horizon** specifically had a lot of text placed above brown noise. At first I tried to use the heal brush, but I quickly found out it would be too much work and began to look for less labor intensive options.
 
-The **other**, even bigger problem was the export pipeline. Until now my pipeline had been pretty simple. I load all pages into GIMP, I save them one by one as *.xcf*, I do my edits, I export them one by one as *.png* and then I run them through a png optimiser before finally publishing them on **MangaDex**. That had worked pretty well until now, however **The Horizon** was the first manga I translated that often had over **50** pages per chapter. That meant that even before beginning to translate I had to waste often over **10** minutes just repeating a couple of button chords merely to ensure my progress would be saved. Add the same amount of time for export and it was becoming *very* annoying.
+The **other**, even bigger problem was the export pipeline. Until now my pipeline had been pretty simple. I load all pages into GIMP, I save them one by one as *.xcf*, I do my edits, I export them one by one as *.jpg* and then I run them through a jpg optimiser before finally publishing them on **MangaDex**. That had worked pretty well until now, however **The Horizon** was the first manga I translated that often had over **50** pages per chapter. That meant that even before beginning to translate I had to waste often over **10** minutes just repeating a couple of button chords merely to ensure my progress would be saved. Add the same amount of time for export and it was becoming *very* annoying.
 
 **Fortunately**, I found a script to solve this!
 
@@ -261,7 +261,7 @@ Unfortunately, one of the manga that has been delisted is **The Horizon**.
 
 I only found that out recently and I was ready to be outraged. All the chapters had been deleted, leaving only superficial **metadata** as clues to their existence.
 
-![](/whacky-corner/scanlator/images/horizon_2.png "Where are we going?")
+![](/whacky-corner/scanlator/images/horizon_2.jpg "Where are we going?")
 
 However, I remembered I had made **backups**, so it's fine. I'm happy. Remember, people. If there's anything I want you to take from this blog post is make **backups**. Always make **backups**.
 
@@ -281,7 +281,7 @@ The typesetting was trivial too.
 
 I know I sound sad right now, but I am genuinely very happy with the result. It's different, it's not funny and it was not as much fun to make, but at the end of the day, it's still pretty good.
 
-![](/whacky-corner/scanlator/images/horizon_3.png "Forward.")
+![](/whacky-corner/scanlator/images/horizon_3.jpg "Forward.")
 
 Shame it's likely to spend the rest of its days locked up in my home **cloud** server.
 

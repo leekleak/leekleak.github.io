@@ -84,6 +84,11 @@
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
   </div>
   {{- end }}
+  {{- if not (.Param "hideMeta") }}
+    <footer class="entry-footer">
+      {{- partial "post_meta.html" . -}}
+    </footer>
+  {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
 {{- end }}
@@ -113,10 +118,12 @@
 
 {{- end }}{{/* end profileMode */}}
 
+{{- if .IsHome }}
 <div style="display:flex; justify-content: center; width:100%">
-  <a href="http://www.allaboutfrogs.org/funstuff/frogtest.php3">
-    <img src="http://www.allaboutfrogs.org/funstuff/frogtest/result5.jpg"  width=215 height=100 alt="I'm a Madagascan Burrowing Frog!">
+  <a href="https://www.allaboutfrogs.org/funstuff/frogtest.php3">
+    <img src="https://www.allaboutfrogs.org/funstuff/frogtest/result5.jpg"  width=215 height=100 alt="I'm a Madagascan Burrowing Frog!">
   </a>
 </div>
+{{- end }}
 
 {{- end }}{{- /* end main */ -}}
