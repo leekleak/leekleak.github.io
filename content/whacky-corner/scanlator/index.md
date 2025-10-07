@@ -1,7 +1,7 @@
 ---
 title: 'So apparently I am the most prolific manga scanlator in Lithuania'
 summary: 'Yeah. You read that right, and I have data to prove it!'
-date: 2025-10-01T23:06:38+02:00
+date: 2025-10-03
 draft: false
 ShowToc: true
 cover:
