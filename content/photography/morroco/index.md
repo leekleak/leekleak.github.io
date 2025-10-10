@@ -4,7 +4,7 @@ summary: 'Album of images from Morroco'
 date: 2025-09-30
 draft: false
 cover:
-  image: "/photography/morroco/ResizedImage_2025-09-29_19-47-25_23-caesium.jpg"
+  image: "/photography/morroco/cover.jpg"
   alt: "Cover"
   relative: false
   hidden: false

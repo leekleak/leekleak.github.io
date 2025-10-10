@@ -4,7 +4,7 @@ summary: 'Album of images from Mexico'
 date: 2025-09-30
 draft: false
 cover:
-  image: "/photography/mexico/ResizedImage_2025-09-29_20-04-38_160-caesium.jpg"
+  image: "/photography/mexico/cover.jpg"
   alt: "Cover"
   relative: false
   hidden: false
