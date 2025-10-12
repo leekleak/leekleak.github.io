@@ -1,7 +1,7 @@
 ---
 title: 'Rocking My Baby to Industrial Metal'
 summary: "Ported DOOM to libpynq. It was mostly fun."
-date: 2025-10-11
+date: 2025-10-12
 draft: false
 ShowToc: true
 cover:
@@ -27,37 +27,51 @@ cover:
 5.  Run `make install`
 6.  Run `make run`
 
+# Controls
+
+**SW1:** Enter (Use to navigate menus)
+
+**SW0:** Use (Open doors and use switches)
+
+**BTN3:** Left
+
+**BTN2:** Right
+
+**BTN1:** Up
+
+**BTN0:** Shoot
+
 # Troubleshooting
 
 - I get errors
   - Maybe try different .wad files
 - I get horrible performance
-  - After I boot up my PYNQ, VSCode eats up 100% of the CPU time indexing stuff. If you're experiencing the same, try waiting for it to finish.
+  - After I boot up my PYNQ, VSCode eats up 100% of the CPU time indexing files. If you're experiencing the same, try waiting for it to finish.
 
 # I did not expect porting DOOM was *this* easy
 
-Like yeah, the legend says that you can run DOOM on a toaster or on a microwave, but I always thought that that was at least a mild exaggeration. You know... It can't be that...
+Like yeah, the legend says that you can run DOOM on a toaster or on a microwave, but I always thought that this was at least a mild exaggeration. You know... It can't be that...
 
-It's that easy.
+It's *that* easy.
 
 For context, before attempting this, I thought it would take me at least a couple of days, maybe even a week or two, but no. This genuinely took half a day and most of that time was wasted just wrestling with makefiles. Considering that I'm a total C newbie, it's really incredible the amount of work the people behind [doomgeneric](https://github.com/ozkl/doomgeneric) did to make the dream of running DOOM literally anywhere a reality.
 
 Seriously, I cannot stress this enough -- this entire porting process required me to write exactly **SIX** functions of which only **TWO** took more than 5 minutes. It's ludicrous.
 
-The point behind this entire paragraph is that it's so easy it's a wonder it hasn't been ported to *more* platforms. So go ahead, do it. Be the change you want to see in the world. Port DOOM to your dishwasher and share it with the world.
+My point is that it's so easy it's a wonder it hasn't been ported to *more* platforms. So go ahead, do it. Be the change you want to see in the world. Port DOOM to your dishwasher and share it with the world.
 
 # Performance and libpynq
 
 ## The first image
-The very first thing I tried to do after getting my PYNQ board was display images on the cute little display. That was literally my first time touching C, but it was surprisingly easy and with the help of `stb_image` I got an image on the display within that very same day.
+The very first thing I tried to do after getting my PYNQ board was to display images on the cute little display. That was literally my first time touching C, but it was surprisingly easy and with the help of `stb_image` I got an image on the display within that very same day.
 
 ![](/programming/doom-libpynq/image.jpg "The image in question")
 
-Having experienced great success, I set myself a slightly bigger challenge of getting Shrek to run. Obviously, I had no intention of working with video codecs and the like, so the second best option was a gif. Luckily the `stb_image` library already had some functions for dealing with gifs too, so the next day, in all my excitement, I plugged in the wires and...
+Having experienced great success, I set myself a slightly bigger challenge of playing Shrek on this bad boy. Obviously, I had no intention of working with video codecs and the like, so the second-best option was a gif. Luckily, the `stb_image` library already had some functions for dealing with gifs too, so the next day, in all my excitement, I plugged in the wires and...
 
-There was a major problem. The performance wasn't great. By that I mean it ran at a whopping 0.25 FPS. Certainly not real-time and about 100 times less than what would be required to run DOOM without having the ambulance on the line.
+There was a major problem. The performance wasn't great. By that I mean it ran at a *whopping* 0.25 FPS. Certainly not real-time and about 100 times less than what would be required to run DOOM without having the ambulance on the line.
 
-Not sure what to do, I cleaned up my spaghetti code and while that did manage to improve the performance to maybe about 0.33 FPS, things were not looking good. My code was pretty much perfect, so in a desperate search for answers I dove into the libpynq source code.
+Being unsure of what to do, I cleaned up my spaghetti code and while that did manage to improve the performance to maybe about 0.33 FPS, things were not looking good. My code was pretty much perfect, so in a desperate search for answers I dove into the libpynq source code.
 
 ## Expedition into the source
 
@@ -106,9 +120,9 @@ bool spi_master_write_color(display_t *display, uint16_t color, uint16_t size) {
 
 And there's more.
 
-Admittedly, there's *a* reason to do (some of) this. You wait to ensure that the data you've written has actually been passed through and received or whatever, but man that's slow. I want real-time rendering, I don't care if there's a pixel missing or something like that. I want pixels to move and I want them do to that fast.
+Admittedly, there's *a* reason to do (some of) this. You wait to ensure that the data you've written has actually been passed through and received or whatever, but, man, that's slow. I want real-time rendering, I don't care if there's a pixel missing or something like that. I want pixels to move and I want them do to that fast.
 
-During my excursion to the source files I:
+In the end, during my excursion to the source files I:
 - Commented out all that shit (It's fine, to my eye the picture's perfect even without the guardrails).
 - Discovered a function to draw pixels in batches and adapted it to my codebase.
 
@@ -120,25 +134,13 @@ Most importantly, Shrek was happy.
 
 ## Why stop at 26 FPS?
 
-Ehh, from what I looked, it seems that I've reached the maximum bandwidth SPI supports (protocol I'm using to communicate with the screen).
+Uhhh it's complicated. 
 
-Currently each pixel requires two writes as I can only send 8 bits per write, so that's a possible route for further optimisation. During my testing I did manage to roughly double the result to 55 FPS by simply not sending the second write, which reinforced my belief that it's a bandwidth issue. However, I could not bear to downgrade from a beautiful 16-bit palette to 8-bit. Isn't that the difference between the NES and SNES?
+At first I thought that 26 FPS was the limit. I looked around the library source and found out that the largest bottleneck was the loop sending the pixel data to the display, the speed of which was only limited by the hardware itself. That left me with 2 routes for further optimization:
 
-Hell, I can just show the difference: 
+1. Send less data
+   1. Unfortunately not possible as according to my SPI display's datasheet it requires 16-bit color data (meaning two 8-bit writes)
+2. Send data faster
+   1. That seems to actually be possible with QSPI or by using more IO pins for parallel data transfer, however from what I've gleaned that's much above my skill level and there's little motivation to do that when 26 FPS is fairly playable.
 
-![](/programming/doom-libpynq/comparison.jpg "8-bit vs 16-bit")
-
-Oh.
-
-Ok lol.
-
-I honestly thought there would be a bigger difference.
-
-Wait, how many bits was NES again?
-
-*checks notes*
-
-**6-bits!?!**
-
-Ok, fine, I guess I'll have to make 8-bits work. 
-
+As well as that, I think I saw a project using FPGA to accelerate DOOM, so if you want to boost the FPS into the hundreds, the sky is the limit.
