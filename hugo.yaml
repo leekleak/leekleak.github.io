@@ -40,6 +40,10 @@ params:
       url: "https://tintotint.itch.io/"
     - name: "bluesky"
       url: "https://bsky.app/profile/tintotint.bsky.social"
+    - name: "letterboxd"
+      url: "https://letterboxd.com/leekleak/"
+    - name: "anilist"
+      url: "https://anilist.co/user/leekleak/"
     - name: "rss"
       url: /feed/
   mainSections:
