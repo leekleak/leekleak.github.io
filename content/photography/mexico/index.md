@@ -4,7 +4,7 @@ summary: 'Album of images from Mexico'
 date: 2025-09-30
 draft: false
 cover:
-  image: "/photography/mexico/cover.jpg"
+  image: "/photography/mexico/cover.webp"
   alt: "Cover"
   relative: false
   hidden: false

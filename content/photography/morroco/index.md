@@ -4,7 +4,7 @@ summary: 'Album of images from Morroco'
 date: 2025-09-30
 draft: false
 cover:
-  image: "/photography/morroco/cover.jpg"
+  image: "/photography/morroco/cover.webp"
   alt: "Cover"
   relative: false
   hidden: false

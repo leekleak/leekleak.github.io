@@ -5,7 +5,7 @@ date: 2025-10-12
 draft: false
 ShowToc: true
 cover:
-   image: "/programming/doom-libpynq/cover.jpg"
+   image: "/programming/doom-libpynq/cover.webp"
    alt: "PYNQ running DOOM"
    relative: false
 ---
