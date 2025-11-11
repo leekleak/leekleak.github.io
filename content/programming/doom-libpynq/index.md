@@ -29,17 +29,9 @@ cover:
 
 # Controls
 
-**SW1:** Enter (Use to navigate menus)
-
-**SW0:** Use (Open doors and use switches)
-
-**BTN3:** Left
-
-**BTN2:** Right
-
-**BTN1:** Up
-
-**BTN0:** Shoot
+| SW1 | SW0 | BTN3 | BTN2 | BTN1 | BTN0 |
+| --- | --- | ---- | ---- | ---- | ---- |
+| Enter (Use to navigate menus) | Use (Open doors and use switches) |Left | Right | Up | Down |
 
 # Troubleshooting
 

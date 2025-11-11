@@ -17,7 +17,8 @@ params:
     apple_touch_icon: "/apple-touch-icon.png"
   ShowRssButtonInSectionTermList: true
   env: production
-  defaultTheme: auto
+  defaultTheme: dark
+  disableThemeToggle: true
   description: tintotint's personal website to document their antics
   homeInfoParams:
     Title: hello, i'm tintotint
