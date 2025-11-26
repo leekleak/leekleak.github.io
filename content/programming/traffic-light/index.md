@@ -5,7 +5,7 @@ date: 2025-11-18
 draft: false
 ShowToc: true
 cover:
-   image: "/programming/traffic-light/cover.png"
+   image: "/programming/traffic-light/cover.svg"
    alt: "Traffic Light cover"
    relative: false
 ---
