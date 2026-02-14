@@ -1,8 +1,8 @@
 {{ if .Title }}
-  <figure>
-    <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
-    <figcaption style="text-align: center;">{{ .Title }}</figcaption>
-  </figure>
+<figure style="display: flex; flex-direction: column; align-items: center">
+    <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" />
+    <figcaption style="text-align: center">{{ .Title }}</figcaption>
+</figure>
 {{ else }}
-  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
+<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" />
 {{ end }}
