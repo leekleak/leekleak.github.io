@@ -1,8 +1,6 @@
-{{ if .Title }}
 <figure style="display: flex; flex-direction: column; align-items: center">
     <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" />
+    {{ if .Title }}
     <figcaption style="text-align: center">{{ .Title }}</figcaption>
+    {{ else }}{{ end }}
 </figure>
-{{ else }}
-<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" />
-{{ end }}
