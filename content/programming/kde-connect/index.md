@@ -1,13 +1,13 @@
 ---
 title: 'KDE Connect of the Future'
 summary: "An exploration of things that could be."
-date: 2026-02-21
+date: 2026-02-24
 ShowToc: true
 draft: false
-_build:
-  list: never
-  publishResources: true
-  render: always
+tags:
+  - KDE
+  - Design
+  - Open Source
 cover:
    image: "/programming/kde-connect/cover.png"
    alt: "KDE Connect for Android mockups"
