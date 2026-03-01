@@ -23,7 +23,7 @@ params:
   homeInfoParams:
     Title: hello, i'm tintotint
     Content: >
-      <div> 
+      <div>
         <p style="float: left; padding-right: 10px;">
           <img alt="emoji avatar of me" src="/apple-touch-icon.png" height="100px" width="100px">
         </p>
@@ -45,6 +45,8 @@ params:
       url: "https://letterboxd.com/leekleak/"
     - name: "anilist"
       url: "https://anilist.co/user/leekleak/"
+    - name: "monero"
+      url: "monero:487d5nsX5NuLQ6BZWsvVKsSZuFR5MtJrPez1ptPHdibgCYFpDS9ZibrMVNPjfNFAtMiPFVZTHYqpa8bnCmHNrfqBKrKCZwn"
     - name: "rss"
       url: /feed/
   mainSections:
@@ -57,4 +59,3 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-  
