@@ -46,7 +46,7 @@ params:
     - name: "anilist"
       url: "https://anilist.co/user/leekleak/"
     - name: "monero"
-      url: "monero:487d5nsX5NuLQ6BZWsvVKsSZuFR5MtJrPez1ptPHdibgCYFpDS9ZibrMVNPjfNFAtMiPFVZTHYqpa8bnCmHNrfqBKrKCZwn"
+      url: "monero:45nPbxgtTsnS9xs5FJjBF14Zxn9BX6D1EHpAYjXJwAML8Q7ApksLTxgVL2njuGFxQ4L2djr3UkXjX6pAZTkXtuNe19iH52D"
     - name: "rss"
       url: /feed/
   mainSections:
