@@ -1,0 +1,56 @@
+{{- define "main" }}
+
+    {{- /* Aspect ratio for images: 1.26:1 */ -}}
+    <header class="page-header">
+        <h1>Software</h1>
+    </header>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 20px;">
+        {{ partial "card.html" (dict
+            "image" "projects/traffic.svg"
+            "title" "Traffic Light"
+            "description" "The best FOSS network monitor"
+            "active_time" "October 2025 - Current"
+            "link" "https://tintotint.itch.io/melomys"
+        ) }}
+
+        {{ partial "card.html" (dict
+            "image" "projects/meteo.svg"
+            "title" "KvaesitsoMeteoLT"
+            "description" "Plugin to track weather data in Lithuania"
+            "active_time" "September 2024"
+            "link" "https://tintotint.itch.io/melomys"
+        ) }}
+    </div>
+
+    <header class="page-header">
+        <h1>Games</h1>
+    </header>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 20px;">
+    {{ partial "card.html" (dict
+        "image" "projects/melomys.png"
+        "title" "Melomys"
+        "description" "Travel the underground wastes in search of hope"
+        "active_time" "May 2025 - September 2025"
+        "link" "https://tintotint.itch.io/melomys"
+    ) }}
+
+
+    {{ partial "card.html" (dict
+        "image" "projects/shroom.png"
+        "title" "Shroom Troop"
+        "description" "Retake your home by cleansing the caves of the parasitic perli"
+        "active_time" "November 2024 - December 2024"
+        "link" "https://tintotint.itch.io/shroom-troop"
+    ) }}
+
+    {{ partial "card.html" (dict
+        "image" "projects/tempoh.png"
+        "title" "Tempoh 3D"
+        "description" "Think you're fast? Well not fast enough"
+        "active_time" "September 2023 - October 2023"
+        "link" "https://tintotint.itch.io/shroom-troop"
+    ) }}
+
+    </div>
+
+{{- end }}{{- /* end main */ -}}

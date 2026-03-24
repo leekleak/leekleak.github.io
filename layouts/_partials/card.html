@@ -1,0 +1,31 @@
+<article class="post-entry custom-card">
+    {{- if .image }}
+    <figure class="entry-cover">
+        <img loading="lazy" src="{{ .image | relURL }}" alt="{{ .title }}">
+    </figure>
+    {{- end }}
+
+    <header class="entry-header">
+        <h2>{{ .title }}</h2>
+    </header>
+
+    {{- if or .description .active_time }}
+    <div class="entry-content">
+        {{- if .active_time }}
+        <p style="margin-bottom: 8px; color: var(--secondary); font-size: 14px;">
+            <strong>Time:</strong> {{ .active_time }}
+        </p>
+        {{- end }}
+
+        {{- if .description }}
+        <p>{{ .description | markdownify }}</p>
+        {{- end }}
+    </div>
+    {{- end }}
+
+    {{- if .link }}
+    <footer class="entry-footer">
+        <a class="entry-link" aria-label="post link" href="{{ .link }}"></a>
+    </footer>
+    {{- end }}
+</article>
