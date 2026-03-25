@@ -1,3 +1,19 @@
 .entry-content {
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 10;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default: 1 column */
+  column-gap: 20px;
+}
+
+:root {
+    --gap: 14px;
+}
+
+@media (min-width: 420px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
