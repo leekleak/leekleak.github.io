@@ -1,5 +1,6 @@
 ---
-title: "Europa Universalis 4 is the ultimate power fantasy."
+title: "Europa Universalis 4 is the ultimate power fantasy"
+summary: "And that's quite fun to think about."
 date: 2026-02-14
 draft: false
 cover:
