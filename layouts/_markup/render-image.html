@@ -1,5 +1,5 @@
-<figure style="display: flex; flex-direction: column; align-items: center">
-    <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" />
+<figure style="display: flex; flex-direction: column; align-items: center;">
+    <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" style="max-height: 640px;" />
     {{ if .Title }}
     <figcaption style="text-align: center">{{ .Title }}</figcaption>
     {{ else }}{{ end }}
