@@ -39,6 +39,7 @@ Everything!! But first,
 <div class="flow-row">
 
 ![](/programming/kde-connect2/home.jpg "Home Screen")
+
 ![](/programming/kde-connect2/pairing.jpg "Pairing Overlay")
 
 </div>
@@ -66,6 +67,7 @@ Finally, in the second screenshot you see a brand new overlay used for pairing. 
 <div class="flow-row">
 
 ![](/programming/kde-connect2/device.jpg "Control centre")
+
 ![](/programming/kde-connect2/settings.jpg "Device Settings")
 
 </div>
@@ -93,6 +95,7 @@ Now all global settings have been moved to the app settings menu, with only a cl
 <div class="flow-row">
 
 ![](/programming/kde-connect2/music.jpg "Music Control")
+
 ![](/programming/kde-connect2/remote.jpg "Remote")
 
 </div>
@@ -117,6 +120,7 @@ Nothing to add or remove to a remote, but we can make it more familiar by mimick
 <div class="flow-row">
 
 ![](/programming/kde-connect2/touchpad.jpg "Remote Input")
+
 ![](/programming/kde-connect2/presentation.jpg "Presentation Remote")
 
 </div>
@@ -141,6 +145,7 @@ Now for the exercise in clarification. Few changes otherwise, but important butt
 <div class="flow-row">
 
 ![](/programming/kde-connect2/permissions.jpg "Required Permissions")
+
 ![](/programming/kde-connect2/settings2.jpg "App settings")
 
 </div>
