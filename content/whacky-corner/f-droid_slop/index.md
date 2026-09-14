@@ -1,5 +1,5 @@
 ---
-title: "Is F-Droid slop now?"
+title: "How much of F-Droid is slop?"
 summary: "Investigating the use of LLMs in the Android FOSS community"
 date: 2026-09-15
 draft: false
