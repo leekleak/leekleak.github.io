@@ -1,0 +1,25 @@
+{{- /*
+  {{< icon src="https://example.com/icon.png" size="64" radius="12px" >}}Amber{{< /icon >}}
+*/ -}}
+
+{{- $src := .Get "src" -}}
+{{- $size := .Get "size" | default "48" -}}
+{{- $radius := .Get "radius" | default "8px" -}}
+{{- $title := trim .Inner " \n\r\t" -}}
+
+
+{{- if not $title -}}
+  {{- errorf "icon shortcode: missing title (inner content) in %s" .Position -}}
+{{- end -}}
+
+<div style="display:flex; align-items:center; gap:1em;">
+  <img
+    src="{{ $src }}"
+    alt="{{ $title }}"
+    width="{{ $size }}"
+    height="{{ $size }}"
+    style="width:{{ $size }}px; height:{{ $size }}px; border-radius:{{ $radius }}; object-fit:cover; display:inline-block; flex-shrink:0;"
+    loading="lazy"
+  />
+  <h2 id="{{ $title | anchorize }}" style="margin:0;">{{ $title }}</h2>
+</div>
