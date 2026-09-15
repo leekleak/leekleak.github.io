@@ -1150,9 +1150,9 @@ ShizuWall {{< /icon >}}
 
 **Repository:** https://github.com/ihateblueb/snowdrop
 
-{{<ok>}}<b>Rating:</b> Mostly Human{{</ok>}}<br>
+{{<good>}}<b>Rating:</b> No signs of AI{{</ok>}}<good>
 
-**Justification:** Some evidence of AI use, but it looks limited.
+**Justification:** Authors have confirmed no LLM usage + .noai file present
 
 <!--
 82
@@ -1456,8 +1456,8 @@ Someone go find that person and teach them to use git😭😭.
 Out of 102 apps:
 ```
 {{<bad>}}<b>74</b> were largely written by AI <b>(72.5%)</b>{{</bad>}}
-{{<ok>}}<b>10</b> were hard to categorize one way or another <b>(9.8%)</b>{{</ok>}}
-{{<good>}}<b>18</b> showed little to no signs of AI involvement <b>(17.6%)</b>{{</good>}}
+{{<ok>}}<b>9</b> were hard to categorize one way or another <b>(8.8%)</b>{{</ok>}}
+{{<good>}}<b>19</b> showed little to no signs of AI involvement <b>(18.6%)</b>{{</good>}}
 ```
 
 Really not sure how to cope with these numbers though.
