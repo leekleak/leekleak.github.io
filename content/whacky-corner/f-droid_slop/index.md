@@ -1,5 +1,5 @@
 ---
-title: "How much of F-Droid is slop?"
+title: "How much of F-Droid is LLM generated?"
 summary: "Investigating the use of LLMs in the Android FOSS community"
 date: 2026-09-15
 draft: false
