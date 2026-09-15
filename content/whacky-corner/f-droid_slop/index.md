@@ -6,7 +6,7 @@ draft: false
 tags:
   - Open Source
 cover:
-  image: "/whacky-corner/f-droid_slop/header.svg"
+  image: "/whacky-corner/f-droid_slop/header.png"
   alt: "F-Droid robot looking very sad"
   relative: false
 ShowToc: true
