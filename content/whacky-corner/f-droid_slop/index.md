@@ -12,12 +12,25 @@ cover:
 ShowToc: true
 ---
 
+# Preamble
+
+So for better and for **worse** this blog post has gotten some traction. Most of it rather tribal, unfortunately. So I have 2 points I want to front-load to anyone reading this.
+
+1. LLM usage does not make the project *"slop"*. A big part of the projects using LLMs are overseen and guided by skilled people who review the output and ensure code quality. I think there are many valid uses for this technology even if I think it is largely harmful.
+
+2. The results of the investigation are not to be taken *too* seriously. This was done mostly for fun and out of curiousity and I apologize to the couple of creators whose projects I have mislabeled for the distress seeing this post may have caused.
+
+To extend on point 2, I have since taken a second look at the apps list and re-categorized around 9-10 apps, all towards being **more** human coded than I had thought at first. I have been rather been nice to the apps on re-review, so one or two "Mostly LLM" projects may have slipped into "Mostly Human" category, but that's a sacrifice I am willing to make.
+
+If you have any other corrections feel free to reach out.
+
+
+# Intro
+
 I love F-Droid. I love what F-Droid stands for and I like the freedom that it gives its users. As a FOSS app maintainer I also have **nothing** but good things to say about the people behind the project. Maybe they're even a bit *too* nice, considering how many times repro has failed due to me forgetting to commit before building 😅.
 
 But **my god** is it hard to find human-written software now.
 
-
-# Intro
 ## The problem
 Sometimes I open F-Droid just to browse. You know, maybe I'll find an app that solves a problem I didn't know I had, or maybe I'll find a better alternative to something I already use.
 
@@ -160,9 +173,9 @@ Couple of notes:
 
 **Repository:** https://github.com/rw-account/baly_groceries_tracker
 
-{{<bad>}}<b>Rating:</b> Mostly AI {{</bad>}}<br>
+{{<ok>}}<b>Rating:</b> Mostly human {{</ok>}}<br>
 
-**Justification:** Code and commits exhibit various AI smells.
+**Justification:** Some inconsistent code styles, suspiciously formatted README and a very "AI-type" UI style. Otherwise, nothing concrete.
 
 <!--
 7.
@@ -371,7 +384,7 @@ evcc - solar charging {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
 
-**Justification:** Most recent code commits look LLM generated, accepted PRs from agents. Quite unfortunate, as this is the first app in this list that I actually use, but it works.
+**Justification:** Agentic infrastructure, most recent code commits look LLM generated, accepted PRs from agents.
 
 <!--
 23
@@ -447,9 +460,9 @@ evcc - solar charging {{< /icon >}}
 
 **Repository:** https://github.com/FreetimeMaker/GeoWeather
 
-{{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
+{{<ok>}}<b>Rating:</b> Mostly Human{{</ok>}}<br>
 
-**Justification:** Most recent commits look LLM generated.
+**Justification:** Signs of heavy LLM use in the README and the website, however nothing too concrete in the code to be considered mostly AI
 
 <!--
 29
@@ -473,9 +486,9 @@ evcc - solar charging {{< /icon >}}
 
 **Repository:** https://github.com/Taewan-P/gpt_mobile
 
-{{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
+{{<ok>}}<b>Rating:</b> Mostly human{{</ok>}}<br>
 
-**Justification:** Most recent commits look LLM generated.
+**Justification:** Has LLM Infrastructure, however a decent amount of contributions look human, so I'm giving the benefit of the doubt.
 
 <!--
 31
@@ -488,7 +501,7 @@ evcc - solar charging {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
 
-**Justification:** README got that LLM emoji vomit; recent commits look AI 
+**Justification:** README got that LLM emoji vomit; very high inbound code frequency. UI looks like what LLMs like to generate.
 
 <!--
 32
@@ -529,7 +542,7 @@ invoice, quote, delivery note {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
 
-**Justification:** All recent commits look entirely AI generated
+**Justification:** All recent commits co-authored by Claude.
 
 <!--
 35.
@@ -542,7 +555,7 @@ invoice, quote, delivery note {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI {{</bad>}}<br>
 
-**Justification:** Most recent commits look entirely AI generated.
+**Justification:** Recent commits look entirely AI generated.
 
 <!--
 36
@@ -554,9 +567,9 @@ kitshn (for Tandoor) {{< /icon >}}
 
 **Repository:** https://github.com/kitshn-app/kitshn
 
-{{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
+{{<good>}}<b>Rating:</b> No signs of AI{{</good>}}<br>
 
-**Justification:** Most recent commits look entirely AI generated.
+**Justification:** Nothing looks suspicious
 
 <!--
 37
@@ -582,7 +595,7 @@ kitshn (for Tandoor) {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
 
-**Justification:** Born from one +10k LOC "init" commit. 2 remaining commits look LLM authored
+**Justification:** Born from one +10k LOC "init" commit. 2 remaining commits look LLM authored and so does the UI.
 
 <!--
 39
@@ -609,7 +622,7 @@ LetterBox {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
 
-**Justification:** Most recent commits look entirely AI generated.
+**Justification:** Recent commits look entirely AI generated.
 
 <!--
 41
@@ -635,7 +648,7 @@ LetterBox {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
 
-**Justification:** Most recent commits look entirely AI generated.
+**Justification:** Most recent commits look AI generated.
 
 <!--
 43
@@ -659,9 +672,9 @@ LetterBox {{< /icon >}}
 
 **Repository:** https://github.com/rama-io/mako
 
-{{<ok>}}<b>Rating:</b> Mostly Human{{</ok>}}<br>
+{{<good>}}<b>Rating:</b> No signs of AI{{</good>}}<br>
 
-**Justification:** I see some commits that look LLM generated, but others look human. Let's err on the side of caution.
+**Justification:** Nothing too suspicious.
 
 <!--
 45
@@ -845,9 +858,9 @@ motd {{< /icon >}}
 
 **Repository:** https://github.com/gabeg805/NFC-Alarm-Clock
 
-{{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
+{{<good>}}<b>Rating:</b> No signs of AI{{</ok>}}<br>
 
-**Justification:** Most recent commits look AI generated.
+**Justification:** Nothing looks suspicious.
 
 <!--
 59
@@ -928,7 +941,7 @@ Personal Stuff {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
 
-**Justification:** Most recent commits look AI generated.
+**Justification:** A lot of recent commits look AI generated.
 
 <!--
 65
@@ -965,9 +978,9 @@ Personal Stuff {{< /icon >}}
 
 **Repository:** https://github.com/InfinityLoop1308/PipePipe
 
-{{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
+{{<ok>}}<b>Rating:</b> Mostly Human{{</ok>}}<br>
 
-**Justification:** Most recent commits look AI generated.
+**Justification:** Originally I marked this as "Mostly LLM" due to some commits being suspicious and translations being added manually whenever adding features. On reflection, the commits in question were mostly made by outside contributors and the translations I've confirmed to be basic MTL, not AI.
 
 <!--
 68
@@ -980,7 +993,7 @@ Personal Stuff {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
 
-**Justification:** Most recent commits look AI generated.
+**Justification:** Most recent commits look AI generated and so does the README.
 
 <!--
 69
@@ -993,7 +1006,7 @@ Personal Stuff {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI {{</bad>}}<br>
 
-**Justification:** Most recent commits look AI generated.
+**Justification:** Most recent commits look AI generated and so does the README.
 
 <!--
 70
@@ -1006,7 +1019,7 @@ Personal Stuff {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
 
-**Justification:** Most recent commits look AI generated.
+**Justification:** Most recent commits look AI generated and so does the README.
 
 <!--
 71
@@ -1032,7 +1045,7 @@ Personal Stuff {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI {{</bad>}}<br>
 
-**Justification:** Most recent commits look AI generated.
+**Justification:** Most recent commits look AI generated + found some stray undeleted LLM thinking comments. UI has that AI look.
 
 <!--
 73
@@ -1045,7 +1058,7 @@ Personal Stuff {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
 
-**Justification:** All recent commits are AI generated.
+**Justification:** All recent commits are co-authored by Claude.
 
 <!--
 74
@@ -1058,7 +1071,7 @@ Personal Stuff {{< /icon >}}
 
 {{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
 
-**Justification:** All recent commits are AI generated.
+**Justification:** All recent commits are co-authored by Claude.
 
 <!--
 75
@@ -1282,9 +1295,9 @@ TimeLimit.io {{< /icon >}}
 
 **Repository:** https://github.com/omaawr/tuisku
 
-{{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
+{{<good>}}<b>Rating:</b> No signs of AI{{</good>}}<br>
 
-**Justification:** LLM infrastructure; recent commits look mostly LLM generated.
+**Justification:** Explicit no-AI policy.
 
 <!--
 92
@@ -1455,9 +1468,9 @@ Someone go find that person and teach them to use git😭😭.
 
 Out of 102 apps:
 ```
-{{<bad>}}<b>74</b> were largely written by AI <b>(72.5%)</b>{{</bad>}}
-{{<ok>}}<b>9</b> were hard to categorize one way or another <b>(8.8%)</b>{{</ok>}}
-{{<good>}}<b>19</b> showed little to no signs of AI involvement <b>(18.6%)</b>{{</good>}}
+{{<bad>}}<b>67</b> were largely written by AI <b>(65.7%)</b>{{</bad>}}
+{{<ok>}}<b>12</b> were hard to categorize one way or another <b>(11.8%)</b>{{</ok>}}
+{{<good>}}<b>24</b> showed little to no signs of AI involvement <b>(23.5%)</b>{{</good>}}
 ```
 
 Really not sure how to cope with these numbers though.

@@ -55,6 +55,8 @@ params:
       url: "monero:45nPbxgtTsnS9xs5FJjBF14Zxn9BX6D1EHpAYjXJwAML8Q7ApksLTxgVL2njuGFxQ4L2djr3UkXjX6pAZTkXtuNe19iH52D"
     - name: "rss"
       url: /feed/
+    - name: "email"
+      url: "leekleak@proton.me"
   mainSections:
     - games
     - programming
