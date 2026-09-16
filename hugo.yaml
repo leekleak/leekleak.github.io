@@ -56,7 +56,7 @@ params:
     - name: "rss"
       url: /feed/
     - name: "email"
-      url: "leekleak@proton.me"
+      url: "mailto:leekleak@proton.me"
   mainSections:
     - games
     - programming
