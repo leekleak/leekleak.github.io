@@ -1017,9 +1017,9 @@ Personal Stuff {{< /icon >}}
 
 **Repository:** https://github.com/sidhant947/queens
 
-{{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
+{{<ok>}}<b>Rating:</b> Mostly human{{</ok>}}<br>
 
-**Justification:** Most recent commits look AI generated and so does the README.
+**Justification:** Some AI smells, but maintainer has refused some LLM generated PRs and has contacted to confirm it's mostly human.
 
 <!--
 71
@@ -1468,8 +1468,8 @@ Someone go find that person and teach them to use git😭😭.
 
 Out of 102 apps:
 ```
-{{<bad>}}<b>67</b> were largely written by AI <b>(65.7%)</b>{{</bad>}}
-{{<ok>}}<b>12</b> were hard to categorize one way or another <b>(11.8%)</b>{{</ok>}}
+{{<bad>}}<b>66</b> were largely written by AI <b>(64.7%)</b>{{</bad>}}
+{{<ok>}}<b>13</b> were hard to categorize one way or another <b>(12.7%)</b>{{</ok>}}
 {{<good>}}<b>24</b> showed little to no signs of AI involvement <b>(23.5%)</b>{{</good>}}
 ```
 
