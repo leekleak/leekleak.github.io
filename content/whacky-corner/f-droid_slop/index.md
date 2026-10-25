@@ -305,7 +305,7 @@ Couple of notes:
 
 {{<bad>}}<b>Rating:</b> Mostly AI{{</bad>}}<br>
 
-**Justification:** Recent commits look AI authored. Note that this repository is hosted on Codeberg and likely violates their terms of use.
+**Justification:** Author has confirmed that most code is LLM generated, however the project has a strict AI policy requiring manual review of all such code along and manual testing.
 
 <!--
 17.
